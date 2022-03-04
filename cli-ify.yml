@@ -16,4 +16,4 @@ settings:
 commands:
   - ex1:
       description: An example of command with an argument myArgv
-      module: ./modules/ex1.js
+      module: ./modules/ex1/ex1.js

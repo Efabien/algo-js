@@ -15,5 +15,13 @@ settings:
     error: red
 commands:
   - ex1:
-      description: An example of command with an argument myArgv
-      module: ./modules/ex1/ex1.js
+      description: Sorting an array
+      module: ./modules/ex1
+      argv: sub-cmd
+      sub-commands:
+        - detail:
+            description: open issue in the browser. Use the -i option to provide the issue key (defaults to the git branch name)
+            sub-module: detail.js
+        - solve:
+            description: Run tests
+            sub-module: ex1.js

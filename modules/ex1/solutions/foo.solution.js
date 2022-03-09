@@ -1,6 +1,5 @@
 module.exports = (input) => {
-  const { data } = input;
-  return data.sort((a, b) => {
+  return input.sort((a, b) => {
     return a - b
   });
 };

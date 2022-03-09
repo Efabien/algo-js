@@ -3,14 +3,14 @@ const utils = require('../../utils');
 module.exports = (arg, { logger }) => {
   const datas = [
     {
-      value: [3, 2, 1, 5],
-      expected: [1, 2, 3, 5],
-      name: 'Small array'
+      value: 'iTopiNonAvevanoNipoti',
+      expected: true,
+      name: 'Case - 0'
     },
     {
-      value: [],
-      expected: [],
-      name: 'Empty array'
+      value: 'iGattiNonAvevanoCugini',
+      expected: false,
+      name: 'Case - 2'
     }
   ];
 

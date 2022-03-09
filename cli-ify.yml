@@ -20,8 +20,19 @@ commands:
       argv: sub-cmd
       sub-commands:
         - detail:
-            description: open issue in the browser. Use the -i option to provide the issue key (defaults to the git branch name)
+            description: More information about the challenge
             sub-module: detail.js
         - solve:
             description: Run tests
             sub-module: ex1.js
+  - ex2:
+      description: Palendrom
+      module: ./modules/ex2
+      argv: sub-cmd
+      sub-commands:
+        - detail:
+            description: More information about the challenge
+            sub-module: detail.js
+        - solve:
+            description: Run tests
+            sub-module: ex2.js

@@ -33,12 +33,14 @@ module.exports.solutionReader = ({ dir, logger }, datas) => {
       const { solution, name } = solutions[i];
       logger.data(`Testing ${name} ...`);
       for (let j = 0; j < datas.length; j++) {
-        const { value, expected } = datas[j];
+        const { value, expected, name } = datas[j];
+        const step = name || `${ j + 1 } - `;
+        logger.info(step);
         expect(solution(value)).to.eql(expected);
-        logger.info(`${'✔'} Run succefully`);
+        logger.info(`  ${'✔'} Run succefully`);
       }
     } catch (error) {
       logger.error(error.message);
     }
   }
-}
+};

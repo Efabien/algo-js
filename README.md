@@ -26,6 +26,18 @@ From now you can invoke the commande algo.
 ``` bash
 algo --help
 ```
+You should be prompted something similar to this
+```bash
+Commands:
+  algo ex1 [sub-cmd]  Sorting an array
+  algo ex2 [sub-cmd]  Palendrom
+Options:
+  --help     Show help                                                 [boolean]
+  --version  Show version number                                       [boolean]
+```
+Under "Commands:" you have the list of available challanges.
+
 ## How to propose a solution for one challenge
+
 
 ## How to create a challenge

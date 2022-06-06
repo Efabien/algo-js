@@ -1,4 +1,5 @@
 settings:
+  invocation: 'algo'
   interactivity:
     label: ' '
     delimiter: ' '

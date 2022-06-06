@@ -36,3 +36,14 @@ commands:
         - solve:
             description: Run tests
             sub-module: ex2.js
+  - ex3:
+      description: test roel
+      module: ./modules/ex3
+      argv: sub-cmd
+      sub-commands:
+        - detail:
+            description: More information about the challenge
+            sub-module: detail.js
+        - solve:
+            description: Run tests
+            sub-module: ex3.js
